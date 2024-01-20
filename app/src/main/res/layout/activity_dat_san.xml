@@ -23,7 +23,7 @@
             android:src="@drawable/back2" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/TextTaiKhoan"
             android:layout_width="388dp"
             android:layout_height="90dp"
             android:background="#AFE676"
