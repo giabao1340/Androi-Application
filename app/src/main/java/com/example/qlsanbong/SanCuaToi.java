@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class DatSan extends AppCompatActivity {
+public class SanCuaToi extends AppCompatActivity {
     ImageButton btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dat_san);
+        setContentView(R.layout.activity_san_cua_toi);
         btnBack = (ImageButton) findViewById(R.id.buttonBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,6 +21,5 @@ public class DatSan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }
