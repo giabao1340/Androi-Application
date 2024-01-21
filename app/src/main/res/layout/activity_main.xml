@@ -1,122 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:orientation="vertical"
     app:layout_anchorGravity="center"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="232dp"
+        app:srcCompat="@drawable/fbyard" />
 
-        <TextView
-            android:id="@+id/TextTaiKhoan"
-            android:layout_width="414dp"
-            android:layout_height="90dp"
-            android:background="#AFE676"
-            android:gravity="center"
-            android:text="ĐẶT LỊCH SÂN BÓNG"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Hôm nay: "
-            android:textSize="20sp"
-            android:textStyle="normal|italic" />
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="341dp"
-            android:layout_marginTop="10dp" />
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="152dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:orientation="horizontal">
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@drawable/botron_button"
+                android:src="@drawable/calendar" />
 
-                <ImageButton
-                    android:id="@+id/imageButton7"
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:background="#AEE576"
-                    android:src="@drawable/calendar" />
+            <TextView
+                android:id="@+id/datlich"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:gravity="center|top"
+                android:text="Đặt sân"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/datlich"
-                    android:layout_width="128dp"
-                    android:layout_height="38dp"
-                    android:gravity="center|top"
-                    android:text="Đặt sân"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@drawable/botron_button"
+                app:srcCompat="@drawable/yard" />
 
-                <ImageButton
-                    android:id="@+id/imageButton8"
-                    android:layout_width="match_parent"
-                    android:layout_height="115dp"
-                    android:background="#AEE576"
-                    app:srcCompat="@drawable/yard" />
+            <TextView
+                android:id="@+id/san"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:gravity="center|top"
+                android:text="Sân của tôi"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/san"
-                    android:layout_width="128dp"
-                    android:layout_height="38dp"
-                    android:gravity="center|top"
-                    android:text="Sân của tôi"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@drawable/botron_button"
+                app:srcCompat="@drawable/user" />
 
-                <ImageButton
-                    android:id="@+id/imageButton9"
-                    android:layout_width="match_parent"
-                    android:layout_height="116dp"
-                    android:background="#AEE576"
-                    app:srcCompat="@drawable/user" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="128dp"
-                    android:layout_height="38dp"
-                    android:gravity="center|top"
-                    android:text="Tài khoản"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:gravity="center|top"
+                android:text="Tài khoản"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@drawable/botron_button"
+                app:srcCompat="@drawable/notification" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:gravity="center|top"
+                android:text="Thông Báo"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@drawable/botron_button"
+                app:srcCompat="@drawable/like" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:gravity="center|top"
+                android:text="Đánh giá"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@drawable/botron_button"
+                app:srcCompat="@drawable/information" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="128dp"
+                android:layout_height="38dp"
+                android:gravity="center|top"
+                android:text="Về chúng tôi"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

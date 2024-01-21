@@ -10,12 +10,21 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
     ImageButton btnDatSan;
     ImageButton btnSanCuaToi;
+    ImageButton btnTaiKhoan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnDatSan = (ImageButton) findViewById(R.id.imageButton7);
         btnSanCuaToi = (ImageButton) findViewById(R.id.imageButton8);
+        btnTaiKhoan = (ImageButton) findViewById(R.id.imageButton9);
+        btnTaiKhoan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TaiKhoan.class);
+                startActivity(intent);
+            }
+        });
         btnSanCuaToi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class TaiKhoang extends AppCompatActivity {
+public class LoginOrRegister extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tai_khoang);
+        setContentView(R.layout.activity_login_or_register);
     }
 }

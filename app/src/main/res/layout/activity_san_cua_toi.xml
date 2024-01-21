@@ -23,7 +23,7 @@
             android:id="@+id/TextTaiKhoan"
             android:layout_width="386dp"
             android:layout_height="90dp"
-            android:background="#AFE676"
+            android:background="#AEE576"
             android:gravity="center"
             android:text="SÂN CỦA TÔI"
             android:textSize="24sp"
