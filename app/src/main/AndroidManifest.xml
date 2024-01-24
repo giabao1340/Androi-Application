@@ -13,6 +13,9 @@
         android:theme="@style/Theme.QLSanBong"
         tools:targetApi="31">
         <activity
+            android:name="Admin.AdminHome"
+            android:exported="false" />
+        <activity
             android:name=".ChonNgay"
             android:exported="false" />
         <activity
