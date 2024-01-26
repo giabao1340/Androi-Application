@@ -10,29 +10,13 @@
     android:outlineSpotShadowColor="#000000"
     tools:context=".DatSan">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/buttonBack"
-            android:layout_width="37dp"
-            android:layout_height="match_parent"
-            android:background="#AEE576"
-            android:src="@drawable/back2" />
-
-        <TextView
-            android:id="@+id/TextTaiKhoan"
-            android:layout_width="388dp"
-            android:layout_height="90dp"
-            android:background="#AFE676"
-            android:gravity="center"
-            android:text="ĐẶT LỊCH SÂN BÓNG"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <LinearLayout
         android:layout_width="match_parent"

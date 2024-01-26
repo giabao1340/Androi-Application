@@ -7,34 +7,19 @@
     android:orientation="vertical"
     tools:context=".TaiKhoan">
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/buttonBack"
-            android:layout_width="37dp"
-            android:layout_height="match_parent"
-            android:background="#AEE576"
-            android:src="@drawable/back2" />
-
-        <TextView
-            android:id="@+id/TextTaiKhoan"
-            android:layout_width="386dp"
-            android:layout_height="90dp"
-            android:background="#AFE676"
-            android:gravity="center"
-            android:text="TÀI KHOẢN"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:layout_marginTop="20dp"
         tools:srcCompat="@drawable/user" />
 
     <TextView

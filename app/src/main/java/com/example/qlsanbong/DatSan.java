@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.List;
 
@@ -21,7 +22,13 @@ public class DatSan extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dat_san);
-        btnBack = (ImageButton) findViewById(R.id.buttonBack);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("Đặt sân");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         btnChonNgay = (ImageButton) findViewById(R.id.imageButtonChonNgay);
         btnChonNgay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,14 +37,6 @@ public class DatSan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
         // Data:
         this.Sans = DSSan.getSan();
         this.spinner1 = (Spinner) this.findViewById(R.id.spinnerSan);
@@ -56,5 +55,10 @@ public class DatSan extends AppCompatActivity {
                 R.id.textViewGio,
                 this.khungGio);
         this.spinner2.setAdapter(adapter2);
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }
